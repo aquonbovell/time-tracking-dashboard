@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" type="module" defer></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body
+    class="bg-body grid grid-cols-1 h-full font-rubik sm:grid-cols-3 lg:grid-cols-7"
+  >
+    <main
+      class="col-start-2 grid gap-y-6 sm:col-start-2 sm:col-end-5 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6 lg:h-main lg:col-start-2 lg:col-end-3 lg:row-start-2"
+    >
+      <div
+        class="profile bg-card flex flex-col text-white rounded-2xl sm:col-start-3 sm:col-end-4 lg:col-start-1 lg:col-end-2 lg:h-main"
+      >
+        <div
+          class="profile__header bg-profile flex px-7 py-9 gap-6 rounded-2xl justify-center items-center lg:h-90 lg:flex-col lg:items-start"
+        >
+            <img src="./images/image-jeremy.png" alt="" class="profile__img rounded-full border-2 w-20" />
+          <p class="text-base capitalize flex flex-col justify-center">
+            report for
+            <span class="profile__name text-2xl lg:text-40">Jeremy Robson</span>
+          </p>
+        </div>
+        <div
+          class="profile__tabs flex items-center justify-between px-7 text-profile text-lg gap-x-6 lg:flex-col lg:items-start"
+        >
+          <p class="profile__tab py-5 cursor-pointer hover:text-white">Daily</p>
+          <p class="profile__tab py-5 cursor-pointer hover:text-white active">Weekly</p>
+          <p class="profile__tab py-5 cursor-pointer hover:text-white">Monthly</>
+        </div>
+      </div>
+      <section class="dashboard grid  gap-6 sm:grid-cols-2 sm:col-start-1 sm:col-end-6 lg:col-start-2 lg:col-end-5 lg:grid-cols-5 lg:auto-rows-fix">
+
+      </section>
+    </main>
+  </body>
+</html>

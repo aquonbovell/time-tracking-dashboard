@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+html{
+  height: 100%;
+  display: grid;
+}
+.dashboard > *:first-child {
+  background-color: hsl(15, 100%, 70%);
+}
+.dashboard > *:nth-child(2) {
+  background-color: hsl(195, 74%, 62%);
+}
+.dashboard > *:nth-child(3) {
+  background-color: hsl(348, 100%, 68%);
+}
+.dashboard > *:nth-child(4) {
+  background-color: hsl(145, 58%, 55%);
+}
+.dashboard > *:nth-child(5) {
+  background-color: hsl(264, 64%, 52%);
+}
+.dashboard > *:last-child {
+  background-color: hsl(43, 84%, 65%);
+}
+.active{
+  @apply text-white;
+}
