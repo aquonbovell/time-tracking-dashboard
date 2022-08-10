@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/aquonbovell/time-tracking-dashboard](https://github.com/aquonbovell/time-tracking-dashboard)
-- Live Site URL: [https://aquonbovell.github.io/time-tracking-dashboard/](https://aquonbovell.github.io/time-tracking-dashboard/)
+- Live Site URL: [https://fabulous-muffin-ecc425.netlify.app/](https://fabulous-muffin-ecc425.netlify.app/)
 
 ## My process
 
