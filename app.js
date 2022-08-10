@@ -22,6 +22,20 @@ fetch("./data.json")
           e.currentTarget.textContent.toLowerCase().trim()
         );
       });
+      tab.addEventListener("keypress", (event) => {
+        if(event.key === "Enter"){
+        tabs.forEach((item) => {
+          if (item !== tab) {
+            item.classList.remove("active");
+          }
+        });
+        tab.classList.add("active");
+        dashboard.innerHTML = getData(
+          summary,
+          event.currentTarget.textContent.toLowerCase().trim()
+        );
+      }
+      });
     });
   })
   .catch((error) => {
@@ -55,7 +69,7 @@ function getData(data, time) {
                 class="card__img absolute right-2 -top-2 w-20"
               />
             </div>
-            <div class="card__stats cursor-pointer flex-col w-full px-7 py-7 row-span-3 items-center rounded-2xl bg-card hover:bg-profile text-white lg:row-start-2 lg:row-end-6 lg:row-span-auto">
+            <div class="card__stats cursor-pointer flex-col w-full px-7 py-7 row-span-3 items-center rounded-2xl bg-card hover:bg-profile focus-within:bg-profile text-white lg:row-start-2 lg:row-end-6 lg:row-span-auto" tabindex="0">
               <div class="flex justify-between items-center text-tab-active">
                 <div class="card__title text-lg font-medium">
                   ${week[0]}

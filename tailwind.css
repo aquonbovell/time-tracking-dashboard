@@ -765,12 +765,27 @@ html{
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.focus-within\:bg-profile:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: hsl(235 45% 61% / var(--tw-bg-opacity));
+}
+
+.focus-within\:text-white:focus-within {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
 .hover\:bg-profile:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(235 45% 61% / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.focus\:text-white:focus {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
